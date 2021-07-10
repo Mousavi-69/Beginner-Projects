@@ -1,0 +1,29 @@
+
+.contaner-timer{
+    text-align: center;
+
+}
+
+.timer{
+    margin: 200px auto ;
+    width: 200px;
+    height: 100px;
+    background-color: royalblue;
+    border: black 1px solid;
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+.time-blok{
+
+
+    margin: auto;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns:  1fr  0.5fr 1fr ;
+
+}
+.h{
+    align-self: center;
+}

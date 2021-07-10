@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form-BMI</title>
+    <!--    <script src="form-bmi.js"></script>-->
+</head>
+<body>
+<script>
+    MyForm()
+
+    function MyForm() {
+        var user = []
+        for (let i = 0; i = true; i = 1) {
+var p = new Person
+
+            page1()
+
+        }
+
+        //Class User
+        class Person {
+            name
+            family
+            ghad
+            wazn
+            bmi
+            age
+
+        }
+
+        //Page 1
+        function page1() {
+
+
+            var state = prompt("*  خوش آمدید *" + "\n" +
+                "1- صفحه ورود" + "\n" +
+                "2- صفحه ثبت نام" + "\n" +
+                "3- خروج" + "\n"
+            )
+            switch (+state) {
+                case 1:
+                    Login()
+
+                    break
+                case 2:
+                    Signup()
+
+                    break
+                case 3:
+                    window.close()
+            }
+        }
+
+//Signup
+        function Signup() {
+            // var p = new Person()
+            // let person = {}
+            p.name = prompt("نام کاربری را وارد کنید")
+            p.pass = prompt("رمزعبور انتخاب کنید")
+            User.push(p)
+            alert(user[0].name)
+        }
+
+        //Login
+        function Login() {
+            // try {
+            //     alert(user[0].name + "\n" + user[0].pass)
+            //
+            // } catch (e) {
+            //     alert(e)
+            // }
+
+            let nameLogin = prompt("نام کاربری ")
+            let passLogin = prompt("رمزعبور ")
+
+            for (let i = 0; i < user.length; i++) {
+                alert(user[i].name + "\n" + user[i].pass)
+
+                if (nameLogin == user[i].name && passLogin == user[i].pass) {
+                    var id = i;
+                    PageInf(id)
+                } else {
+                    Login()
+                }
+            }
+        }
+
+        //Page Information
+        function PageInf(id) {
+
+            var token = prompt("نام کاربری:" + user[id].name + "\n" +
+                "BMI:" + user[id].bmi?.bmi + "\n" +
+                "     قد:" + user[id].bmi?.ghad + "\n" +
+                "     وزن:" + user[id].bmi?.wazn + "\n" +
+                "     سن:" + user[id].bmi?.age + "\n" + "\n" + "\n" + "\n" +
+
+                "برای محاسبه BMI عدد  1  را وارد کنید" + "\n" +
+                "برای خروج عدد 0 را وارد کنید" + "\n"
+            )
+            if (+token == 1) {
+                BmiCalqlat(id)
+            } else if (+token == 0) {
+                window.close()
+            } else {
+                alert("خطا:" + "\n" + "\n" + " * مقدار  0 یا 1 وارد کنید")
+            }
+        }
+
+        //BMI Calqlator
+        function BmiCalqlat(id) {
+
+            user[id].bmi.ghad = prompt("قد خود ار وارد کنید(برحسب سانتی متر)")
+            user[id].bmi.wazn = prompt("وزن خود ار وارد کنید(برحسب کیلوگرم)")
+            user[id].bmi.age = prompt("سن خود ار وارد کنید")
+
+            PageInf(id)
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
